@@ -1,0 +1,92 @@
+
+
+
+.truncate {
+  white-space: nowrap;         /* Prevent text from wrapping to the next line */
+  overflow: hidden;            /* Hide the overflowing text */
+  text-overflow: ellipsis;     /* Show "..." at the end when text is too long */
+  max-width: 15ch;             /* Limit width roughly to 20 characters */
+  display: inline-block;       /* Needed to apply width */
+}
+
+.vendor-card {
+  width: 320px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 16px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  /* no border as requested */
+}
+
+.vendor-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 16px;
+}
+
+.vendor-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* circular */
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.info {
+  flex-grow: 1;
+}
+
+.name {
+  margin: 0 0 6px 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.address {
+  margin: 0 0 6px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.rating {
+  font-size: 1rem;
+  color: #f5a623; /* star color */
+}
+
+.vendor-footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.vendor-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+}
+
+.btn-services {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-services:hover {
+  background-color: #0056b3;
+}
+
+.btn-history {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-history:hover {
+  background-color: #5a6268;
+}
